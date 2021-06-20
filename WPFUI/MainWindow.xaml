@@ -19,7 +19,34 @@
         </Grid.ColumnDefinitions>
 
         <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Content="Menu" Background="AliceBlue"></Label>
-        <Label Grid.Row="1" Grid.Column="0" Content="Player Data" Background="Aquamarine"></Label>
+        <Grid Grid.Row="1" Grid.Column="0" Background="Aquamarine">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"></ColumnDefinition>
+                <ColumnDefinition Width="Auto"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <Label Grid.Row="0" Grid.Column="0" Content="Name: "></Label>
+            <Label Grid.Row="0" Grid.Column="1" Content="{Binding currentPlayer.Name}"></Label>
+            <Label Grid.Row="1" Grid.Column="0" Content="Class"></Label>
+            <Label Grid.Row="1" Grid.Column="1" Content="{Binding currentPlayer.CharacterClass}"></Label>
+            <Label Grid.Row="2" Grid.Column="0" Content="Hit Points: "></Label>
+            <Label Grid.Row="2" Grid.Column="1" Content="{Binding currentPlayer.HitPoints}"></Label>
+            <Label Grid.Row="3" Grid.Column="0" Content="Gold"></Label>
+            <Label Grid.Row="3" Grid.Column="1" Content="{Binding currentPlayer.Gold}"></Label>
+            <Label Grid.Row="4" Grid.Column="0" Content="EXP"></Label>
+            <Label Grid.Row="4" Grid.Column="1" Content="{Binding currentPlayer.ExperiencePoints}"></Label>
+            <Label Grid.Row="5" Grid.Column="0" Content="Level"></Label>
+            <Label Grid.Row="5" Grid.Column="1" Content="{Binding currentPlayer.Level}"></Label>
+        </Grid>
         <Label Grid.Row="1" Grid.Column="1" Content="Game Data" Background="Beige"></Label>
         <Label Grid.Row="2" Grid.Column="0" Content="Inventory/Quests" Background="BurlyWood"></Label>
         <Label Grid.Row="2" Grid.Column="1" Content="Combat/Movement Controls" Background="Lavender"></Label>
