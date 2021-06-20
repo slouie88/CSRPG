@@ -36,15 +36,15 @@
 
             <Label Grid.Row="0" Grid.Column="0" Content="Name: "></Label>
             <Label Grid.Row="0" Grid.Column="1" Content="{Binding currentPlayer.Name}"></Label>
-            <Label Grid.Row="1" Grid.Column="0" Content="Class"></Label>
+            <Label Grid.Row="1" Grid.Column="0" Content="Class:"></Label>
             <Label Grid.Row="1" Grid.Column="1" Content="{Binding currentPlayer.CharacterClass}"></Label>
             <Label Grid.Row="2" Grid.Column="0" Content="Hit Points: "></Label>
             <Label Grid.Row="2" Grid.Column="1" Content="{Binding currentPlayer.HitPoints}"></Label>
-            <Label Grid.Row="3" Grid.Column="0" Content="Gold"></Label>
+            <Label Grid.Row="3" Grid.Column="0" Content="Gold:"></Label>
             <Label Grid.Row="3" Grid.Column="1" Content="{Binding currentPlayer.Gold}"></Label>
-            <Label Grid.Row="4" Grid.Column="0" Content="EXP"></Label>
+            <Label Grid.Row="4" Grid.Column="0" Content="EXP:"></Label>
             <Label Grid.Row="4" Grid.Column="1" Content="{Binding currentPlayer.ExperiencePoints}"></Label>
-            <Label Grid.Row="5" Grid.Column="0" Content="Level"></Label>
+            <Label Grid.Row="5" Grid.Column="0" Content="Level:"></Label>
             <Label Grid.Row="5" Grid.Column="1" Content="{Binding currentPlayer.Level}"></Label>
         </Grid>
         <Label Grid.Row="1" Grid.Column="1" Content="Game Data" Background="Beige"></Label>
