@@ -5,6 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPFUI"
         mc:Ignorable="d"
+        FontSize="11pt"
         Title="Stefan's RPG Project" Height="768" Width="1024">
     <Grid>
         <Grid.RowDefinitions>
@@ -36,20 +37,46 @@
             </Grid.ColumnDefinitions>
 
             <Label Grid.Row="0" Grid.Column="0" Content="Name: "></Label>
-            <Label Grid.Row="0" Grid.Column="1" Content="{Binding currentPlayer.Name}"></Label>
+            <Label Grid.Row="0" Grid.Column="1" Content="{Binding CurrentPlayer.Name}"></Label>
             <Label Grid.Row="1" Grid.Column="0" Content="Class:"></Label>
-            <Label Grid.Row="1" Grid.Column="1" Content="{Binding currentPlayer.CharacterClass}"></Label>
+            <Label Grid.Row="1" Grid.Column="1" Content="{Binding CurrentPlayer.CharacterClass}"></Label>
             <Label Grid.Row="2" Grid.Column="0" Content="Hit Points: "></Label>
-            <Label Grid.Row="2" Grid.Column="1" Content="{Binding currentPlayer.HitPoints}"></Label>
+            <Label Grid.Row="2" Grid.Column="1" Content="{Binding CurrentPlayer.HitPoints}"></Label>
             <Label Grid.Row="3" Grid.Column="0" Content="Gold:"></Label>
-            <Label Grid.Row="3" Grid.Column="1" Content="{Binding currentPlayer.Gold}"></Label>
+            <Label Grid.Row="3" Grid.Column="1" Content="{Binding CurrentPlayer.Gold}"></Label>
             <Label Grid.Row="4" Grid.Column="0" Content="EXP:"></Label>
-            <Label Grid.Row="4" Grid.Column="1" Content="{Binding currentPlayer.ExperiencePoints}"></Label>
+            <Label Grid.Row="4" Grid.Column="1" Content="{Binding CurrentPlayer.ExperiencePoints}"></Label>
             <Label Grid.Row="5" Grid.Column="0" Content="Level:"></Label>
-            <Label Grid.Row="5" Grid.Column="1" Content="{Binding currentPlayer.Level}"></Label>
+            <Label Grid.Row="5" Grid.Column="1" Content="{Binding CurrentPlayer.Level}"></Label>
             <Button Grid.Row="6" Grid.Column="1" Content="Add XP" Click="ButtonBase_OnClick"></Button>
         </Grid>
-        <Label Grid.Row="1" Grid.Column="1" Content="Game Data" Background="Beige"></Label>
+
+        <Grid Grid.Row="1" Grid.Column="1" Background="Beige">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="3*"></ColumnDefinition>
+                <ColumnDefinition Width="2*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <Border Grid.Row="0" Grid.Column="1" BorderBrush="Gainsboro" BorderThickness="1">
+                <Grid Margin="3">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="*"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                    </Grid.RowDefinitions>
+
+                    <TextBlock Grid.Row="0" HorizontalAlignment="Center" Text="{Binding CurrentLocation.Name}"></TextBlock>
+
+                    <TextBlock Grid.Row="2" HorizontalAlignment="Center" Text="{Binding CurrentLocation.Description}"></TextBlock>
+                </Grid>
+            </Border>
+            
+        </Grid>
         <Label Grid.Row="2" Grid.Column="0" Content="Inventory/Quests" Background="BurlyWood"></Label>
         <Label Grid.Row="2" Grid.Column="1" Content="Combat/Movement Controls" Background="Lavender"></Label>
         
