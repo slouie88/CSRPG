@@ -16,7 +16,7 @@ namespace Engine.ViewModels
          
             CurrentPlayer = new Player("HDMaster88", "Sage", 100, 0, 1, 100);
 
-            CurrentLocation = new Location(0, -1, "Home", "Thunder Dragon Mountain", "image");
+            CurrentLocation = new Location(0, -1, "Home", "Thunder Dragon Sage's Home", "pack://application:,,,/Engine;component/Images/Locations/Home.png");
 
         }
     }
