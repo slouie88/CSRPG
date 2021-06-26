@@ -14,6 +14,16 @@ namespace Engine.Models
         private int _level;
         private int _gold;
 
+        public Player(string name, string characterClass, int hitPoints, int experiencePoints, int level, int gold)
+        {
+            _name = name;
+            _characterClass = characterClass;
+            _hitPoints = hitPoints;
+            _experiencePoints = experiencePoints;
+            _level = level;
+            _gold = gold;
+        }
+
         public string Name 
         {
             get
