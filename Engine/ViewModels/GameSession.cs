@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
+using Engine.Factories;
 
 namespace Engine.ViewModels
 {
@@ -11,12 +12,17 @@ namespace Engine.ViewModels
 
         public Location CurrentLocation { get; set; }
 
+        public World CurrentWorld { get; set; }
+
         public GameSession()
         {
          
             CurrentPlayer = new Player("HDMaster88", "Sage", 100, 0, 1, 100);
 
-            CurrentLocation = new Location(0, -1, "Home", "Thunder Dragon Sage's Home", "pack://application:,,,/Engine;component/Images/Locations/Home.png");
+            WorldFactory factory = new WorldFactory();
+            CurrentWorld = factory.CreateWorld();
+
+            CurrentLocation = CurrentWorld.LocationAt(0, -1);
 
         }
     }
