@@ -8,6 +8,9 @@ namespace Engine.Models
     {
         private List<Location> _locations = new List<Location>();
 
+
+
+
         internal void AddLocation(int XCoordinate, int YCoordinate, string name, string description, string imageName)
         {
             Location loc = new Location(XCoordinate, YCoordinate, name, description, imageName);
