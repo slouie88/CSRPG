@@ -13,7 +13,15 @@ namespace Engine.Models
 
         internal void AddLocation(int XCoordinate, int YCoordinate, string name, string description, string imageName)
         {
-            Location loc = new Location(XCoordinate, YCoordinate, name, description, imageName);
+            //Location loc = new Location(XCoordinate, YCoordinate, name, description, imageName);
+            Location loc = new Location
+            {
+                XCoordinate = XCoordinate,
+                YCoordinate = YCoordinate,
+                Name = name,
+                Description = description,
+                ImageName = imageName
+            };
             _locations.Add(loc);
         }
 

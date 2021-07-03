@@ -12,14 +12,6 @@ namespace Engine.Models
         private string _description;
         private string _imageName;
 
-        public Location(int XCoordinate, int YCoordinate, string name, string description, string imageName)
-        {
-            _XCoordinate = XCoordinate;
-            _YCoordinate = YCoordinate;
-            _name = name;
-            _description = description;
-            _imageName = imageName;
-        }
 
         public int XCoordinate
         {
