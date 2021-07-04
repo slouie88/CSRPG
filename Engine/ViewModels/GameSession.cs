@@ -76,6 +76,12 @@ namespace Engine.ViewModels
 
         public World CurrentWorld { get; set; }
 
+
+
+
+
+
+
         public GameSession()
         {
 
@@ -94,8 +100,8 @@ namespace Engine.ViewModels
 
             CurrentLocation = CurrentWorld.LocationAt(0, -1);
 
-        }
 
+        }
 
 
 

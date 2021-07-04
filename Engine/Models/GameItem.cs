@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Engine.Models
 {
-    class GameItem
+    public class GameItem
     {
         public int ItemTypeID { get; set; }
 
