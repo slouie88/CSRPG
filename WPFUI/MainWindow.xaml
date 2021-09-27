@@ -82,6 +82,25 @@
                     <TextBlock Grid.Row="2" HorizontalAlignment="Center" Text="{Binding CurrentLocation.Description}"></TextBlock>
                 </Grid>
             </Border>
+
+            <Border Grid.Row="1" Grid.Column="1" BorderBrush="Gainsboro" BorderThickness="1">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="*"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                    </Grid.RowDefinitions>
+
+                    <TextBlock Grid.Row="0" HorizontalAlignment="Center" Height="Auto" Text="{Binding CurrentMonster.Name}"></TextBlock>
+
+                    <Image Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" Height="125" Width="125" Source="{Binding CurrentMonster.ImageName}"></Image>
+
+                    <StackPanel Grid.Row="2" Visibility="{Binding HasMonster, Converter={StaticResource BooleanToVisibility}}" HorizontalAlignment="Center" Orientation="Horizontal">
+                        <TextBlock>Current Hit Points</TextBlock>
+                        <TextBlock Text="{Binding CurrentMonster.HitPoints}"></TextBlock>
+                    </StackPanel>
+                </Grid>
+            </Border>
             
         </Grid>
 
