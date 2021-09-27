@@ -34,7 +34,7 @@ namespace Engine.Models
             RewardExperiencePoints = rewardExperiencePoints;
             RewardGold = rewardGold;
 
-            Inventory = new ObservableCollection<ItemQuantity>;
+            Inventory = new ObservableCollection<ItemQuantity>();
         }
     }
 }
