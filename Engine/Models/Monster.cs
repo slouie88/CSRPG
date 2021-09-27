@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Engine.Models
 {
-    class Monster : BaseNotifcationClass
+    public class Monster : BaseNotifcationClass
     {
         private int _hitpoints;
 

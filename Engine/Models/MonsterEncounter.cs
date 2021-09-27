@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Engine.Models
 {
-    class MonsterEncounter
+    public class MonsterEncounter
     {
         public int MonsterID { get; set; }
         public int ChanceOfEncountering { get; set; }

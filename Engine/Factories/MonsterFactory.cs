@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Engine.Factories
 {
-    class MonsterFactory
+    public class MonsterFactory
     {
         public static Monster GetMonster(int monsterID)
         {
