@@ -53,6 +53,7 @@ namespace Engine.Models
                     return MonsterFactory.GetMonster(monsterEncounter.MonsterID); 
             }
 
+            // Just return the the last monster in the monsters list if there was a problem with using the random number generator
             return MonsterFactory.GetMonster(Monsters.Last().MonsterID);
         }
     }
