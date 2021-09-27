@@ -18,6 +18,10 @@ namespace Engine.Factories
             _standardGameItems.Add(new Weapon(1002, "Aged Wooden Sword", 1, 2, 3));
             _standardGameItems.Add(new GameItem(9001, "Snake fang", 1));
             _standardGameItems.Add(new GameItem(9002, "Snakeskin", 2));
+            _standardGameItems.Add(new GameItem(9003, "Spider Stinger", 2));
+            _standardGameItems.Add(new GameItem(9004, "Spider Legs", 1));
+            _standardGameItems.Add(new GameItem(9005, "Orc Medallion", 5));
+            _standardGameItems.Add(new GameItem(9006, "Orc Tusk", 2));
         }
 
         public static GameItem CreateGameItem(int itemTypeID)
